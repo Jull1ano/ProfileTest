@@ -101,18 +101,38 @@
     </header>
 
     <main class="main container">
-      <section class="profile">
+      <form class="profile" action="index.html">
         <header class="profile-header">
           <div class="profile-header-left">
-            <img src="/images/user-square.svg" alt="User ico" />Profile
+            <img src="/images/user-square.svg" alt="User ico" />Edit Profile
           </div>
           <div class="profile-header-right">
-            <a class="edit-ico" href="editProfile.html"
-              ><img
-                src="/images/edit.svg"
-                alt="Edit Profile"
-                title="Edit Profile"
-            /></a>
+            <!-- <a href="" class="cancel"
+              ><img src="/images/x.svg" alt="Cancel" title="Cancel" />Cancel</a
+            >
+            <a href="index.html" class="save"
+              ><img src="/images/save.svg" alt="Save" title="Save" />Save</a
+            > -->
+            <button
+              type="reset"
+              class="cancel"
+              title="Cancel"
+              id="reset"
+              name="reset"
+            >
+              <img src="/images/x.svg" alt="Cancel" title="Cancel" />Cancel
+            </button>
+
+            <button
+              type="submit"
+              class="save"
+              title="Save"
+              id="submit"
+              name="submit"
+            >
+              <img src="/images/save.svg" alt="Save" title="Save" />Save
+            </button>
+
             <a class="more-ico" href="#"
               ><img
                 src="/images/dots-edit.svg"
@@ -124,53 +144,117 @@
         <section class="cards">
           <ul>
             <li class="card4">
-              <div class="top-card">First name</div>
-              <div class="main-info-card">Alia</div>
-              <div class="bottom-card">Self-declaration</div>
+              <label for="name" class="top-card">First name</label>
+
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="inputname"
+                value="Alia"
+                placeholder="name"
+              />
             </li>
             <li class="card4">
-              <div class="top-card">Last name</div>
-              <div class="main-info-card">Bhatt</div>
-              <div class="bottom-card">Self-declaration</div>
+              <label for="surname" class="top-card">Last name</label>
+
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                class="inputname"
+                value="Bhatt"
+                placeholder="surname"
+              />
             </li>
             <li class="card4">
-              <div class="top-card">Date of birth</div>
-              <div class="main-info-card">1975-01-01</div>
-              <div class="bottom-card">Manual</div>
+              <label for="dateofbirth" class="top-card">Date of birth</label>
+              
+              <input
+              type="text"
+              name="dateofbirth"
+              id="dateofbirth"
+              class="inputname"
+              value="1975-01-01"
+              placeholder="dateofbirth"
+            />
             </li>
             <li class="card4">
-              <div class="top-card">SSN</div>
-              <div class="main-info-card">19221332212212</div>
-              <div class="bottom-card">Manual input</div>
+              <label for="ssn" class="top-card">SSN</label>
+              
+              <input
+              type="text"
+              name="ssn"
+              id="ssn"
+              class="inputname"
+              value="19221332212212"
+              placeholder="ssn"
+            />
             </li>
             <li class="card2">
-              <div class="top-card">Email 1</div>
-              <div class="main-info-card">aliabhatt@microsoft.com</div>
-              <div class="bottom-card">Self-declaration</div>
+              <label for="email1" class="top-card">Email 1</label>
+              
+              <input
+              type="text"
+              name="email1"
+              id="email1"
+              class="inputname"
+              value="aliabhatt@microsoft.com"
+              placeholder="email1"
+            />
             </li>
             <li class="card2">
-              <div class="top-card">Email 2</div>
-              <div class="main-info-card">aliabhatt@ikea.com</div>
-              <div class="bottom-card">Self-declaration</div>
+              <label for="email2" class="top-card">Email 2</label>
+              
+              <input
+              type="text"
+              name="email2"
+              id="email2"
+              class="inputname"
+              value="aliabhatt@ikea.com"
+              placeholder="email2"
+            />
             </li>
             <li class="card3">
-              <div class="top-card">Phone</div>
-              <div class="main-info-card">+22 299 229 222</div>
-              <div class="bottom-card">Self-declaration</div>
+              <label for="phone" class="top-card">Phone</label>
+              
+              <input
+              type="text"
+              name="phone"
+              id="phone"
+              class="inputname"
+              value="+22 299 229 222"
+              placeholder="phone"
+            />
             </li>
             <li class="card3">
-              <div class="top-card">Nationality</div>
-              <div class="main-info-card">Norwegian</div>
-              <div class="bottom-card">Self-declaration</div>
+              <label for="nationality" class="top-card">Nationality</label>
+              
+              <input
+              type="text"
+              name="nationality"
+              id="nationality"
+              class="inputname"
+              value="Norwegian"
+              placeholder="nationality"
+            />
             </li>
             <li class="card3">
-              <div class="top-card">Nationality 2</div>
-              <div class="main-info-card">German</div>
-              <div class="bottom-card">Self-declaration</div>
+              <label for="nationality2" class="top-card">Nationality 2</label>
+              
+              <input
+              type="text"
+              name="nationality2"
+              id="nationality2"
+              class="inputname"
+              value="German"
+              placeholder="nationality2"
+            />
             </li>
           </ul>
         </section>
-      </section>
+      </form>
+
       <aside class="aside">
         <ul class="more-info">
           <li>
